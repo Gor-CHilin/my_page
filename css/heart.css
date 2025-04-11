@@ -1,0 +1,60 @@
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #f0f0f0;
+	flex-direction: column;
+	text-align: center;
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 18px;
+	background-color: #ff4d4d;
+	border: none;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #ff1a1a;
+}
+
+.heart {
+	font-size: 50px;
+	color: #ff0000;
+	display: none;
+	transition: transform 0.3s ease;
+}
+
+.big-heart {
+	font-size: 200px;
+	display: block;
+	transform: scale(0);
+	animation: enlarge 0.5s forwards;
+}
+
+@keyframes enlarge {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+#video {
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+#canvas {
+	display: none;
+}
